@@ -3,23 +3,23 @@ Monitor Dashboard
 
 <B>How To satrt?</B>
 1. Run `git clone` 
-2. set the below params on your linux machine:
+<P>2. set the below params on your linux machine:</P>
 
-<DIV>`set PROXY_URL=http://<your_network_proxy>:8080`
+`set PROXY_URL=http://<your_network_proxy>:8080`
 `set http_proxy=$PROXY_URL`
 `set https_proxy=$PROXY_URL`
 `set HTTP_PROXY=$PROXY_URL`
-`set HTTPS_PROXY=$PROXY_URL`<\DIV>
-3. Run the below script
+`set HTTPS_PROXY=$PROXY_URL`
+
+<P>3. Run the below script<\P>
+
 `#!/bin/bash`
 `export NVM_DIR="/root/.nvm"`
 `[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm`
 
 `nvm use 6.9.5`
 `#npm install -g forever`
-
 `echo NPM INSTALL`
-
 `cd server`
 `npm install`
 
@@ -27,10 +27,10 @@ Monitor Dashboard
 `npm install`
 `npm run build:prod`
 
-4.Run the below script
+<P>4.Run the below script<\P>
+
 `#!/bin/bash`
 `echo Start Server`
-
 `export NODE_ENV=production`
 `cd server`
 `npm run restart`
