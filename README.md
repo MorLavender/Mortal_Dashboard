@@ -4,11 +4,12 @@ Monitor Dashboard
 <B>How To satrt?</B>
 1. Run `git clone` 
 2. set the below params on your linux machine:
-`set PROXY_URL=http://<your_network_proxy>:8080`
+
+<p>`set PROXY_URL=http://<your_network_proxy>:8080`
 `set http_proxy=$PROXY_URL`
 `set https_proxy=$PROXY_URL`
 `set HTTP_PROXY=$PROXY_URL`
-`set HTTPS_PROXY=$PROXY_URL`
+`set HTTPS_PROXY=$PROXY_URL`<\p>
 3. Run the below script
 `#!/bin/bash`
 `export NVM_DIR="/root/.nvm"`
