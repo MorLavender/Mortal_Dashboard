@@ -1,0 +1,14 @@
+<div class="minor bg--primary height--xs">
+  <div class="minor text-color-inverted--strongest text--xl align-self--center">
+    <div class=" font--medium margin-l--lg">HPE</div>
+    <div class="font--light margin-l--xs">Mortal</div>
+    <button (click)="toggleMetadata()">Toggle</button>
+  </div>
+</div>
+<div *ngIf="!ready" class="major centerize">
+  <div class="spin-loader"></div>
+</div>
+<div *ngIf="ready" class="cols">
+  <app-metadata class="flex--0 border--r" [class.hidden]="metadataHidden"></app-metadata>
+  <app-dashboard class="flex--1 padding--md"></app-dashboard>
+</div>

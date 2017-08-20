@@ -1,0 +1,14 @@
+<table class="table table--tertiary">
+  <thead>
+  <tr>
+    <!--<th>#</th>-->
+    <th *ngFor="let col of cols;">{{col}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let host of hosts; let i = index" [class.bg--success]="host.up" [class.bg--error]="!host.up">
+    <!--<td>{{i + 1}}</td>-->
+    <td *ngFor="let col of cols;">{{host[col]}}</td>
+  </tr>
+  </tbody>
+</table>

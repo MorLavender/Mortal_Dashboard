@@ -1,0 +1,7 @@
+<div class="island island--primary margin-b--md" *ngFor="let widget of dashboardWidgets">
+  <div class="island__header">{{widget.productName}} - {{widget.environmentName}}</div>
+  <div class="island__body padding--lg">
+    <app-hosts [hosts]="widget.hosts"></app-hosts>
+  </div>
+</div>
+

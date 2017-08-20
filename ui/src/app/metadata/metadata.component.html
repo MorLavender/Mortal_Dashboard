@@ -1,0 +1,21 @@
+<div class="list list--hover">
+  <div class="list__item hover expanded" *ngFor="let product of products">
+    <div class="title-bar">
+      <div class="title-bar__title">
+        <h3>{{product}}</h3>
+      </div>
+    </div>
+    <div class="list list--hover">
+      <div class="list__item" *ngFor="let job of metadata[product]">
+        <div class="title-bar">
+          <div class="title-bar__title">
+            <div class="">
+              <input [id]="job.id" class="checkbox" type="checkbox" [(ngModel)]="job.selected" (ngModelChange)="cbClicked()">
+              <label [for]="job.id" class="checkbox-label">{{job.name}}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,408 @@
+<Topology>
+<globalProperties>
+	  <environmentName>LR G11N 14 0 QA</environmentName>
+      <EmailRole>Nightly</EmailRole>
+	  <!-- EmailRole can be Nightly or Sanity-->
+      <CurrentVer>14.0</CurrentVer>
+	  <RunCompile>True</RunCompile>
+	  <RunSetup>True</RunSetup>
+	  <RunPatch>False</RunPatch>
+	  <BuildNotes>https://rndwiki.corp.hpecorp.net/confluence/pages/viewpage.action?title=LoadRunner+12.50+Build+Notes</BuildNotes>
+	  <ProductNameFull>LoadRunner</ProductNameFull>
+	  <ProductNameShort>LR</ProductNameShort>
+	  <MailList>shimon@hpe.com</MailList>
+	  <!--MailList>lr.build.info.rnd@hp.com</MailList-->
+	  <EcJobLink>https://mydtelc0001g.hpeswlab.net/commander/link/jobDetails/jobs</EcJobLink>
+	  <DevOpsPortalIP>16.60.153.127</DevOpsPortalIP>
+	  <DevOpsPortalPort>80</DevOpsPortalPort>
+	  <DevOpsPortalPath>/devenvs</DevOpsPortalPath>
+	  <DeploymentPage>http://16.60.153.127/#/DevenvsLRG11N</DeploymentPage>
+	  <AutoSanityDashboard>Not_Defined</AutoSanityDashboard>
+	  <SanityTestCase>Not_Defined</SanityTestCase>
+	  <SanityIssues>Not_Defined</SanityIssues>
+	  <SanityInstructions><![CDATA[<html>
+      <h2 style="color:blue">Perform Sanity and send results to <a href="mailto:lt.rnd.ops@hp.com">LR_DEV_OPS</a></h2>
+	  </html>]]>
+	  </SanityInstructions>
+</globalProperties> 
+	<Hosts>
+		<!-- JPN EN: -->
+		<Host>
+			<name>myd-vm05213</name>
+			<Description>JPN_EN</Description>
+			<InstalledOS>Win 2012 R2 Japanese</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-JPN</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e055e5d3520</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- JPN LP: -->
+		<Host>
+			<name>myd-vm06218</name>
+			<Description>JPN_LP</Description>
+			<InstalledOS>Win 8.1 Japanese</InstalledOS>
+			<vCenterTemplateName>CSA-81-x64-JPN,Windows 8</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_JPN</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\Japanese\LoadRunner\LR_JPN.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9c58826a3c01597e0b1568493c</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- CHS EN: -->
+		<Host>
+			<name>myd-vm04745</name>
+			<Description>CHS_EN</Description>
+			<InstalledOS>Win 2012 R2 Chinese-Simplified</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-CHS,Windows 2012 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e01223119c7</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- CHS + LP: -->
+		<Host>
+			<name>myd-vm21917</name>
+			<Description>CHS_LP</Description>
+			<InstalledOS>Win 10 Chinese-Simplified</InstalledOS>
+			<vCenterTemplateName>CSA-w10-x64-CHS,Windows 10</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_CHS</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\Chinese-Simplified\LoadRunner\LR_CHS.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b5a1de0ce015a46744a623420</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- KOR EN: -->
+		<Host>
+			<name>myd-vm20059</name>
+			<Description>KOR_EN</Description>
+			<InstalledOS>Win 8.1 Korean</InstalledOS>
+			<vCenterTemplateName>CSA-81-x64-KOR,Windows 8</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b5a1de0ce015a31ede5ce167a</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- KOR + LP: -->
+		<Host>
+			<name>myd-vm05225</name>
+			<Description>KOR_LP</Description>
+			<InstalledOS>Win 2012 R2 Korean</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-KOR,Windows 2012 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_KOR</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\Korean\LoadRunner\LR_KOR.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9c58826a3c01597e074df40a26</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- DEU EN: -->
+		<Host>
+			<name>myd-vm04804</name>
+			<Description>DEU_EN</Description>
+			<InstalledOS>Win 2012 R2 German</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-DEU,Windows 2012 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9c58826a3c01597e0135cb63a6</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- DEU + LP: -->
+		<Host>
+			<name>myd-vm08142</name>
+			<Description>DEU_LP</Description>
+			<InstalledOS>Win 7 German</InstalledOS>
+			<vCenterTemplateName>CSA-w7-x64-DEU,Windows 7</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_DEU</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\German\LoadRunner\LR_DEU.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9c5ac141b3015af6bf630c4350</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- FRA EN: -->
+		<Host>
+			<name>myd-vm05356</name>
+			<Description>FRA_EN</Description>
+			<InstalledOS>Win 8.1 French</InstalledOS>
+			<vCenterTemplateName>CSA-81-x64-FRA,Windows 8</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e0b15674d14</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- FRA + LP: -->
+		<Host>
+			<name>myd-vm21730</name>
+			<Description>FRA_LP</Description>
+			<InstalledOS>Win 10 French</InstalledOS>
+			<vCenterTemplateName>CSA-w10-x64-FRA,Windows 10</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_FRA</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\French\LoadRunner\LR_FRA.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b5a1de0ce015a3831835a7eaf</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- ESP EN: -->
+		<Host>
+			<name>myd-vm04810</name>
+			<Description>ESP_EN</Description>
+			<InstalledOS>Win 2012 R2 Spanish</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-ESN,Windows 2012 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e0522e23056</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- ESP + LP: -->
+		<Host>
+			<name>myd-vm06724</name>
+			<Description>ESP_LP</Description>
+			<InstalledOS>Win 2008 R2 Spanish</InstalledOS>
+			<vCenterTemplateName>CSA-w2k8r2-ESN,Windows 2008 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ESP</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\Spanish\LoadRunner\LR_ESP.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e0d68a75d89</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- RUS EN: -->
+		<Host>
+			<name>myd-vm20333</name>
+			<Description>RUS_EN</Description>
+			<InstalledOS>Win 8.1 Russian</InstalledOS>
+			<vCenterTemplateName>CSA-81-x64-RUS,Windows 8</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b5a1de0ce015a31ede5ce15ce</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- RUS LP: -->
+		<Host>
+			<name>myd-vm05226</name>
+			<Description>RUS_LP</Description>
+			<InstalledOS>Win 2012 R2 Russian</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-RUS,Windows 2012 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_RUS</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\Russian\LoadRunner\LR_RUS.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9c58826a3c01597e07755b0ebc</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- ITA EN: -->
+		<Host>
+			<name>myd-vm05038</name>
+			<Description>ITA_EN</Description>
+			<InstalledOS>Win 2012 R2 Italian</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-ITA,Windows 2012 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e054a8a3263</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- ITA LP: -->
+		<Host>
+			<name>myd-vm05408</name>
+			<Description>ITA_LP</Description>
+			<InstalledOS>Win 8.1 Italian</InstalledOS>
+			<vCenterTemplateName>CSA-81-x64-ITA,Windows 8</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ITA</LP_VERSION>
+					<BUILD_NUMBER>\\mydastr01.hpeswlab.net\products\LT\LT-INSTALLERS\win32_release\Inst_12_55_Setup_Last_G11N\DVD\Language Packs\Italian\LoadRunner\LR_ITA.msp</BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e0b15574c90</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- ENG 8.1: -->
+		<Host>
+			<name>myd-vm05365</name>
+			<Description>ENG-1</Description>
+			<InstalledOS>Win 8.1 English</InstalledOS>
+			<vCenterTemplateName>CSA-81-x64-ENG,Windows 8</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b58826a3301597e0b291e5098</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+		<!-- ENG 2012R2: -->
+		<Host>
+			<name>myd-vm20982</name>
+			<Description>ENG-2</Description>
+			<InstalledOS>Win 2012 R2 English</InstalledOS>
+			<vCenterTemplateName>CSA-w2k12r2-ENG,Windows 2012 R2</vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME>LR</PRODUCT_NAME>
+					<PRODUCT_VERSION>12_55_Full_G11N</PRODUCT_VERSION>
+					<LP_VERSION>12_55_LP_ENG</LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID>90bc0b9b59b2f3fc0159cb81ccae3914</Subscription_ID>
+					<Catalog_ID>90bc0b9c4daef4dd014db8fde95209d1</Catalog_ID>
+					<CSA_OWNER>alm_loadrunner_auto</CSA_OWNER>
+					<CSA_PASSWORD>W3lcome1</CSA_PASSWORD>
+					<USERS_EMAIL>shimon@hpe.com,belfer@hpe.com,yoav.weiss@hpe.com,avi.genshaft@hpe.com</USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+	</Hosts>
+</Topology>

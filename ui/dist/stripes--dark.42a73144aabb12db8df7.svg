@@ -1,0 +1,11 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3px" height="3px" viewBox="0 0 3 3" style="enable-background:new 0 0 3 3;" xml:space="preserve">
+	<style>
+	.stripes--xs {
+		fill: none;
+		stroke-width: .25;
+		stroke: black;
+		stroke-linecap: square;
+	}
+	</style>
+	<line class="stripes--xs" x1="3" y1="0" x2="0" y2="3"/>
+</svg>
