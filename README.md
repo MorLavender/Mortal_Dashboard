@@ -11,7 +11,7 @@ Monitor Dashboard
 `set HTTP_PROXY=$PROXY_URL`
 `set HTTPS_PROXY=$PROXY_URL`
 
-<P>3. Run the below script<\P>
+<P>3. Run the below script</P>
 
 `#!/bin/bash`
 `export NVM_DIR="/root/.nvm"`
@@ -27,7 +27,7 @@ Monitor Dashboard
 `npm install`
 `npm run build:prod`
 
-<P>4.Run the below script<\P>
+<P>4.Run the below script</P>
 
 `#!/bin/bash`
 `echo Start Server`
