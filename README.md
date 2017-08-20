@@ -5,11 +5,11 @@ Monitor Dashboard
 1. Run `git clone` 
 2. set the below params on your linux machine:
 
-<p>`set PROXY_URL=http://<your_network_proxy>:8080`
+<DIV>`set PROXY_URL=http://<your_network_proxy>:8080`
 `set http_proxy=$PROXY_URL`
 `set https_proxy=$PROXY_URL`
 `set HTTP_PROXY=$PROXY_URL`
-`set HTTPS_PROXY=$PROXY_URL`<\p>
+`set HTTPS_PROXY=$PROXY_URL`<\DIV>
 3. Run the below script
 `#!/bin/bash`
 `export NVM_DIR="/root/.nvm"`
