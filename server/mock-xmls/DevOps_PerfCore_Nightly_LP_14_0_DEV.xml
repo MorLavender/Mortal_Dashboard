@@ -5,7 +5,7 @@
 	<Hosts>
 		<!-- JPN -->
 		<Host>
-			<name>myd-vm21918</name>
+			<name></name>
 			<Description></Description>
 			<InstalledOS></InstalledOS>
 			<vCenterTemplateName></vCenterTemplateName>
