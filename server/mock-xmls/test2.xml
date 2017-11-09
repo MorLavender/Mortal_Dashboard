@@ -1,0 +1,27 @@
+<Topology>
+<globalProperties>
+	  <environmentName>14 0 QA</environmentName>
+</globalProperties> 
+	<Hosts>
+		<Host>
+			<name></name>
+			<Description></Description>
+			<InstalledOS></InstalledOS>
+			<vCenterTemplateName></vCenterTemplateName>
+			<Products>
+				<Product>
+					<PRODUCT_NAME></PRODUCT_NAME>
+					<PRODUCT_VERSION></PRODUCT_VERSION>
+					<LP_VERSION></LP_VERSION>
+					<BUILD_NUMBER></BUILD_NUMBER>
+					<Subscription_ID></Subscription_ID>
+					<Catalog_ID></Catalog_ID>
+					<OWNER></OWNER>
+					<PASSWORD></PASSWORD>
+					<USERS_EMAIL></USERS_EMAIL>
+					<CSA_OPERATION>Restart</CSA_OPERATION>
+				</Product>
+			</Products>
+		</Host>
+	</Hosts>
+</Topology>
